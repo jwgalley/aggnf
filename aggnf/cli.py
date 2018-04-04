@@ -1,6 +1,11 @@
 import click
 import sys
-from collections import Counter
+
+try:
+    from collections import Counter
+except:
+    from backport_collections import Counter
+
 from signal import signal, SIGPIPE, SIG_DFL
 
 # We have to ignore SIGPIPE due to a BrokenPipeError being raised when the
