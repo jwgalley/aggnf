@@ -57,7 +57,7 @@ def countfile(in_data, sep, fieldnum, ignore_err):
     i = 0
     for line in in_data:
         i += 1
-        lst = line.split(sep)
+        lst = line.strip().split(sep)
         try:
             cnt[lst[fieldnum]] += 1
         except IndexError:

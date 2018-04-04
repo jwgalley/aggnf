@@ -10,7 +10,7 @@ Tests for `aggnf` module.
 
 import unittest
 
-import aggnf
+#import aggnf
 from aggnf import cli
 
 

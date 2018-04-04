@@ -3,4 +3,4 @@
 History
 -------
 
-Pre-release
+April 4th: Released
